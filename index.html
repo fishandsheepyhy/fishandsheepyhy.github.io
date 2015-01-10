@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <title>你好，死基佬</title>
+    <title>亲爱的，生日快乐</title>
     <style type="text/css">
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
@@ -60,7 +60,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 999;
-    background: url("./images/1.jpg") no-repeat center center #F99991;
+    background: url("./images/1.jpg") no-repeat center center #F99991;  
     top: 0;
     left: 0;
     text-align: center;
@@ -96,12 +96,12 @@ body {
     </style>
 </head>
 <body>
-    <div id="loading">基佬变身中...</div>
+    <div id="loading">生日礼物拆封中...</div>
     <div id="theEnd"></div>
     <div id="map"></div>
 
 <!-- 指定全局的分享内容 -->
-<input id="wsContent" type="hidden" value="阿卓喜欢即墨">
+<input id="wsContent" type="hidden" value="一只喜欢吃小肥羊的鱼">
 <!-- 指定全局的分享链接 -->
 <input id="wsUrl" type="hidden" value="http://liumeijun.com/">
 <!-- 指定全局的分享图片 -->
@@ -119,21 +119,26 @@ body {
  * 常用变量
  * 梅州嘉应学院： 116.135018,24.33438
  * 广州广外艺：   113.345774,23.153356
- * 426 KM
- * 5H
+ * 杭州：120.174871, 30.27883
+ * 上海：121.455208, 31.264777
+ * 浙大玉泉校区：120.129596, 30.270471
+ * 上海交大：121.472599, 31.21828
+ * 嘉兴：120.76919, 30.704823
+ * 176.8 KM
+ * 2H
  */
 // 初始化地图中心
-var MP_CEN = {lng: 111.894763, lat: 44.529534};
+var MP_CEN = {lng: 3.894763, lat: 44.529534};
 // 中国中心
-var CN_CEN = {lng: 111.758427, lat: 36.172333};
+var CN_CEN = {lng: 103.758427, lat: 36.172333};
 // 嘉应学院
-var MZ_JYU = {lng: 111.135018, lat: 24.33438};
+var MZ_JYU = {lng: 120.129596, lat: 30.270471};
 // 广外艺
-var GZ_GTC = {lng: 111.345774, lat: 23.153356};
+var GZ_GTC = {lng: 121.472599, lat: 31.21828};
 // 广州市
-var GD_GZS = {lng: 111.256838, lat: 23.157309};
+var GD_GZS = {lng: 120.174871, lat: 30.27883};
 // 河源市
-var GD_HYS = {lng: 111.701682, lat: 23.754195};
+var GD_HYS = {lng: 120.76919, lat: 30.704823};
 // 背景音乐
 var MUSIC;
 
@@ -230,18 +235,18 @@ function panZoom_HEY() {
             setTimeout(function() {
                 var between = [
                     {
-                        title: '直男 → 基佬',
-                        content: '426 km.',
+                        title: '杭州 → 上海',
+                        content: '176.8 km.',
                         point: MZ_JYU
                     },
                     {
-                        title: '直男 → 基佬',
-                        content: '5 hours by train.',
+                        title: '杭州 → 上海',
+                        content: '2 hours by train.',
                         point: GZ_GTC
                     },
                     {
-                        title: '基佬永远是基佬',
-                        content: '<img src="http://s20.mogucdn.com/b7/pic/140721/tgwy2_ieyggmzqgq3dozbsmiytambqgyyde_800x600.jpg_225x999.jpg" width="200" height="149" alt="ticket" />',
+                        title: '距离虽远，但心在一起',
+                        content: '<img src="./images/1.jpg" width="200" height="149" alt="ticket" />',
                         point: MZ_JYU
                     }
                 ];
@@ -258,63 +263,63 @@ function showPhotos() {
         zoomTo(13, 1000, function() {
             var photos = [
                 {
-                    title: 'd',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieydimjqheytmyzsmiytambqgiyde_800x600.jpg_225x999.jpg" width="500" height="373" alt="干嘛" />',
-                    point: {lng: 113.271147, lat: 23.139616}                    
+                    title: '外滩',
+                    content: '<img src="./images/waitan.jpg" alt="外滩" />',
+                    point: {lng: 121.496961, lat: 31.241686}                   
                 },
                 {
-                    title: '呵呵',
-                    content: '<img src="http://s16.mogucdn.com/b7/pic/140721/tgwy2_ieygiolggq3dozbsmiytambqgyyde_1024x768.jpg_225x999.jpg" width="500" height="373" alt="呵呵" />',
-                    point: {lng: 113.252764, lat: 23.131838}                    
+                    title: '甜爱路',
+                    content: '<img src="./images/tianailu.jpg" alt="甜爱路" />',
+                    point: {lng: 121.490385, lat: 31.273296}                   
                 },
                 {
-                    title: '去洗澡',
-                    content: '<img src="http://s19.mogucdn.com/b7/pic/140721/tgwy2_ieydczjume3tmyzsmiytambqgqyde_1024x768.jpg_225x999.jpg" width="500" height="373" alt="去洗澡" />',
-                    point: {lng: 111.894763, lat: 23.200458}
+                    title: '西湖',
+                    content: '<img src="./images/xihu.jpg" alt="西湖" />',
+                    point: {lng: 120.154317, lat: 30.253408}
                 },
                 {
-                    title: '在吗',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieygczbsga4dmyzsmiytambqgqyde_800x600.jpg_225x999.jpg" width="500" height="373" alt="在吗" />',
-                    point: {lng: 111.894763, lat: 23.131838}
+                    title: '龙井采茶',
+                    content: '<img src="./images/longjingcaicha.jpg" alt="龙井采茶" />',
+                    point: {lng: 120.12859, lat: 30.238807}  
                 },
                 {
-                    title: '忙不',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieyggnbshe3dozbsmiytambqgqyde_800x600.jpg_225x999.jpg" width="280" height="375" alt="忙不" />',
+                    title: '厦门',
+                    content: '<img src="./images/xiamen.jpg" width="280" height="375" alt="厦门" />',
+                    point: {lng: 118.156055, lat: 24.512433}  
+                },
+                {
+                    title: '鼓浪屿',
+                    content: '<img src="./images/gulangyu.jpg" width="500" height="375" alt="鼓浪屿" />',
+                    point: {lng: 118.073815, lat: 24.452411}  
+                },
+                {
+                    title: '秀恩爱',
+                    content: '<img src="./images/xiuenai.jpg" width="280" height="375" alt="秀恩爱" />',
                     point: {lng: 111.894763, lat: 23.127547}
                 },
                 {
-                    title: '早点睡',
-                    content: '<img src="http://s20.mogucdn.com/b7/pic/140721/tgwy2_ieydsmjumyytmyzsmiytambqhayde_800x600.jpg_225x999.jpg" width="500" height="375" alt="早点睡" />',
-                    point: {lng: 111.894763, lat: 23.131838}
-                },
-                {
-                    title: 'dota',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieydknrsmy3tmyzsmiytambqhayde_800x600.jpg_225x999.jpg" width="280" height="375" alt="dota" />',
-                    point: {lng: 111.894763, lat: 23.127547}
-                },
-                {
-                    title: '基友',
-                    content: '<img src="http://s20.mogucdn.com/b7/pic/140721/tgwy2_ieydkyrtha3dozbsmiytambqgiyde_800x600.jpg_225x999.jpg" width="280" height="375" alt="基友" />',
+                    title: '再秀',
+                    content: '<img src="./images/zaixiu.jpg" width="280" height="375" alt="再秀" />',
                     point: {lng: 111.894763, lat: 23.123725}
                 },
                 {
-                    title: '破电脑',
-                    content: '<img src="http://s19.mogucdn.com/b7/pic/140721/tgwy2_ieygimlcmmytmyzsmiytambqgiyde_800x600.jpg_225x999.jpg" width="499" height="373" alt="You" />',
+                    title: '臭美中',
+                    content: '<img src="./images/choumeizhong.jpg" width="499" height="373" alt="臭美中" />',
                     point: {lng: 111.894763, lat: 23.106222}
                 },
                 {
-                    title: '死基佬',
-                    content: '<img src="http://s16.mogucdn.com/b7/pic/140721/tgwy2_ieydanjtg43dozbsmiytambqgyyde_800x600.jpg_225x999.jpg" width="500" height="375" alt="离开" />',
+                    title: '好2好2好2',
+                    content: '<img src="./images/hao2hao2hao2.jpg" width="500" height="375" alt="好2好2好2" />',
                     point: {lng: 111.894763, lat: 23.158306}
                 },
                 {
-                    title: '搅基到老',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieyggoldmq3tmyzsmiytambqgyyde_800x600.jpg_225x999.jpg" width="500" height="375" alt="搅基到老" />',
+                    title: '有鬼啊',
+                    content: '<img src="./images/guia.jpg" width="500" height="375" alt="有鬼啊" />',
                     point: {lng: 111.894763, lat: 22.712665}
                 },
                 {
-                    title: '呵呵',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieydgyrrmuytmyzsmiytambqhayde_1024x768.jpg_225x999.jpg" width="500" height="375" alt="呵呵" />',
+                    title: '亲亲，么么哒',
+                    content: '<img src="./images/qinqin.jpg" width="500" height="375" alt="亲亲，么么哒" />',
                     point: {lng: 111.894763, lat: 23.184734}
                 }
             ];
@@ -332,33 +337,33 @@ function wannaTo() {
             var wanna = [
                 {
                     title: '',
-                    content: '啊哈哈哈哈。',
+                    content: '地图标上想去的地方，有一天，带着你去玩耍。',
                     point: CN_CEN
                 },
                 {
-                    title: '琼花',
-                    content: '<img src="http://s20.mogucdn.com/b7/pic/140721/tgwy2_ieydkyrtha3dozbsmiytambqgiyde_800x600.jpg_225x999.jpg" width="500" height="338" alt="wannaTo" />',
-                    point: {lng: 18.148154, lat: 24.497912}
+                    title: '西安',
+                    content: '<img src="./images/xian.jpg" width="500" height="338" alt="wannaTo" />',
+                    point: {lng: 108.951487, lat: 34.256902}  
                 },
                 {
-                    title: '即墨',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieydgyrrmuytmyzsmiytambqhayde_1024x768.jpg_225x999.jpg" width="500" height="337" alt="wannaTo" />',
-                    point: {lng: 10.21191, lat: 26.928061}
+                    title: '凤凰古镇',
+                    content: '<img src="./images/fenghuangguzhen.jpg" width="500" height="337" alt="wannaTo" />',
+                    point: {lng: 100.21191, lat: 26.928061}
                 },
                 {
-                    title: '啊啊吖',
-                    content: '<img src="http://s17.mogucdn.com/b7/pic/140721/tgwy2_ieyggoldmq3tmyzsmiytambqgyyde_800x600.jpg_225x999.jpg" width="499" height="399" alt="wannaTo" />',
-                    point: {lng: 10.503626, lat: 24.780932}
+                    title: '桂林阳朔',
+                    content: '<img src="./images/guilin.jpg" width="499" height="399" alt="wannaTo" />',
+                    point: {lng: 110.503626, lat: 24.780932}
                 },
                 {
-                    title: '5555',
-                    content: '<img src="http://s16.mogucdn.com/b7/pic/140721/tgwy2_ieydanjtg43dozbsmiytambqgyyde_800x600.jpg_225x999.jpg" width="500" height="400" alt="wannaTo" />',
-                    point: {lng: 9.115691, lat: 29.687083}
+                    title: '西藏',
+                    content: '<img src="./images/xizang.jpg" width="500" height="400" alt="wannaTo" />',
+                    point: {lng: 91.115691, lat: 29.687083}
                 },
                 {
-                    title: 'yyyy',
-                    content: '<img src="http://lukesign.qiniudn.com/images/wannato/xihu.jpghttp://s19.mogucdn.com/b7/pic/140721/tgwy2_ieygimlcmmytmyzsmiytambqgiyde_800x600.jpg_225x999.jpg" width="500" height="327" alt="wannaTo" />',
-                    point: {lng: 120.151946, lat: 30.250472}
+                    title: '新疆',
+                    content: '<img src="./images/xinjiang.jpg" width="500" height="327" alt="wannaTo" />',
+                    point: {lng: 87.622121, lat: 43.890828}  
                 }
             ];
         loopWin(wanna, 1000, showMarkerText);
@@ -1080,7 +1085,7 @@ function showMarkerText() {
             loopAddMarker(markerText, function() {
                 setTimeout(function() {
                     slideDown('theEnd', 1000, function() {
-                        var theEndText = '<div id="theEndText">卓叔爱基佬<br />' + 
+                        var theEndText = '<div id="theEndText">Happy birthday to my dearest yang<br />' + 
                                          '<button data-toggle="wshare" data-type="weibo">分享到微博</button>' + 
                                          '<button onclick="window.location.reload();">再看一次</button></div>';
                         document.getElementById('theEnd').innerHTML = theEndText;
