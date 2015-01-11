@@ -1196,13 +1196,13 @@ window.onload = function() {
 
         MUSIC = soundManager.createSound({
             id: 'mp3',
-            url: './perfect.mp3',
+            url: './images/LemonTree.mp3',
             onload: function() {
                 preLoadImages(imglist, function() {
                     setTimeout(function() {
                         var loading = document.getElementById('loading');
                         loading.style.cursor = 'pointer';
-                        loading.innerHTML = '即墨死基佬已经饥渴难耐了，块点击吧';
+                        loading.innerHTML = '生日礼物拆封完毕，块点击吧';
                         loading.onclick = function() {
                             screenfull && screenfull.request();
                             loadScript();
